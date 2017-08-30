@@ -58,22 +58,22 @@ A timely selection from the following topics:
 </p>
 <p>
 <ul>
-    <li><span style="font-weight: bold;">GPU Computing</span>: GPU architecture, massively parallel programming, parallel algorithms, performance, mobile architecture</li>
-    <li><span style="font-weight: bold;">Rendering</span>: Graphics pipeline (rasterization), path tracing, deferred shading, ray marching</li>
-    <li><span style="font-weight: bold;">APIs</span>: CUDA, WebGL, Vulkan (Next-Generation Graphics APIs)</li>
+    <li><span style="font-weight: bold;">GPU Computing</span>: GPU architecture, massively parallel programming, parallel algorithms, performance</li>
+    <li><span style="font-weight: bold;">Rendering</span>: Graphics pipeline (rasterization), path tracing, deferred shading, forward+ rendering, VR</li>
+    <li><span style="font-weight: bold;">APIs</span>: CUDA, WebGL, Vulkan</li>
 </ul>
 </p>
 <p>
 This is a project-intensive course with significant coding, writing, and presenting.  It is <strong>more work</strong> than any other course, but it is worth it.
 </p>
 <p>
-If you are interested in GPGPU programming after this course, please check out <a href="http://www.cis.upenn.edu/~devietti/">Joe Devietti's</a> class <a href="http://www.cis.upenn.edu/~devietti/classes/cis601-spring2017/">CIS 601</a>.
+For a course more focused on GPU architecture without graphics, see Joe Devietti's <a href="http://www.cis.upenn.edu/~devietti/classes/cis601-spring2017/">CIS 601</a>.
 </p>
 
 <h2>Prerequisites</h2>
 <ul>
 <li>Passion for computer graphics.</li>
-<li><a href="http://www.cis.upenn.edu/~badler/courses/cis560.html">CIS 460/560</a>: Introduction to Computer Graphics.  Preferably received an A.</li>
+<li><a href="http://www.cis.upenn.edu/~badler/courses/cis560.html">CIS 460/560</a>: Introduction to Computer Graphics.  Preferably received an A.  Knowledge of rasterization and ray tracing.</li>
 <li>Strong C or C++.</li>
 <li>Also useful:
     <ul>
@@ -85,7 +85,7 @@ If you are interested in GPGPU programming after this course, please check out <
 
 <h2>Schedule, Google Group, and LinkedIn</h2>
 <ul>
-<li><a href="https://docs.google.com/spreadsheets/d/1v7PVpWUsf-9VzKbg4qgd9WX17nM-mTBxCKD0AW88Vmo/edit?usp=sharing">docs.google.com</a>: Google Doc for the class schedule, slides, and project schedule<br /></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1v7PVpWUsf-9VzKbg4qgd9WX17nM-mTBxCKD0AW88Vmo/edit?usp=sharing">Google Doc</a>: for the class schedule, slides, and project schedule<br /></li>
 <li><a href="https://groups.google.com/forum/#!forum/cis-565-fall-2017">cis-565-fall-2017@googlegroups.com</a>: google group for general and project questions<br /></li>
 <li><a href="http://www.linkedin.com/groups/GPU-Programming-Architecture-6540935">LinkedIn Group</a> for networking with current and previous course students</li>
 </ul>
@@ -97,29 +97,30 @@ If you are interested in GPGPU programming after this course, please check out <
 <img src="images/headshots/patrick_cozzi.jpg" width="140" alt="Patrick Cozzi" />
 </p>
 
-<h2>Teaching Assistants</h2>
-<p>
-<strong><a href="http://austin-eng.co/">Austin Eng, Head TA</a>, aen@seas.upenn.edu</strong><br />
-Office: Sig Lab<br />
-Office Hours: T/Th 10:30-1:30pm<br />
-<img src="images/headshots/austin_eng.jpg" width="140" alt="Austin Eng" />
-</p>
-<p>
-<strong><a href="http://miaokaixiang.com/">Kaixiang Miao</a>, miaok@seas.upenn.edu</strong><br />
-Office: Sig Lab<br />
-Office Hours: M/Th 2-4pm<br />
-<img src="images/headshots/kaixiang_miao.jpg" width="140" alt="Kaixiang Miao" />
-</p>
-<p>
-<strong><a href="http://ottav.io">Ottavio Hartman</a>, hartmano@sas.upenn.edu</strong><br />
-Office: Sig Lab<br />
-Office Hours: W 1-3pm<br />
-<img src="images/headshots/ottavio_hartman.gif" width="140" alt="Ottavio Hartman" />
-</p>
 <h2>Invited Lecturer</h2>
 <p>
 <strong><a href="">Shehzan Mohammed</a></strong><br />
 <img src="images/headshots/shehzhan_mohammed.jpg" width="140" alt="Shehzan Mohammed" />
+</p>
+
+<h2>Teaching Assistants</h2>
+<p>
+<strong><a href="http://austin-eng.co/">Austin Eng, Head TA</a>, aen@seas.upenn.edu</strong><br />
+Office: SIG Lab<br />
+Office Hours: Tues and Thur 10:30-1:30pm<br />
+<img src="images/headshots/austin_eng.jpg" width="140" alt="Austin Eng" />
+</p>
+<p>
+<strong><a href="http://miaokaixiang.com/">Kaixiang Miao</a>, miaok@seas.upenn.edu</strong><br />
+Office: SIG Lab<br />
+Office Hours: Mon and Thur 2-4pm<br />
+<img src="images/headshots/kaixiang_miao.jpg" width="140" alt="Kaixiang Miao" />
+</p>
+<p>
+<strong><a href="http://ottav.io">Ottavio Hartman</a>, hartmano@sas.upenn.edu</strong><br />
+Office: SIG Lab<br />
+Office Hours: Wed 1-3pm<br />
+<img src="images/headshots/ottavio_hartman.gif" width="140" alt="Ottavio Hartman" />
 </p>
 
 <h2>Student Advisors</h2>
@@ -144,7 +145,11 @@ Office Hours: W 1-3pm<br />
     <li>
         <a href="https://github.com/pjcozzi/Articles/blob/master/CIS565/GitHubRepo/README.md">How to Make an Attractive GitHub Repository</a>, Patrick Cozzi
     </li>
-    <i>No books are required, but course material comes from many sources including:</i>
+</ul>
+<p>
+No books are required, but course material comes from many sources including:
+</p>
+<ul>
     <li>
         <a href="http://www.elsevierdirect.com/morgan_kaufmann/kirk/">Programming Massively Parallel Processors</a>, Second Edition, 2012, David Kirk and Wen-mei Hwu.
         Old draft pdfs are on the <a href="http://courses.engr.illinois.edu/ece498al/Syllabus.html">website</a> for ECE 498 AL at UIUC.
